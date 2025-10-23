@@ -1,0 +1,158 @@
+body {
+  background-color: #0f0f10;
+  font-family: "Lato", sans-serif;
+}
+
+/* Contenedor principal */
+.bg-form-dark {
+  background: linear-gradient(145deg, #1a1a1d, #202225);
+  border-radius: 15px;
+  color: #e0e0e0;
+}
+
+/* Encabezado */
+.bg-gradient-dark {
+  background: linear-gradient(90deg, #023076, #007bff, #00b4d8);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-header small {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 3px;
+  letter-spacing: 0.3px;
+}
+
+/* Inputs */
+.input-dark {
+  background-color: #2b2b30;
+  color: #ffffff !important;
+  border: 1px solid #666669;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Feedback visual cuando está correcto */
+.input-dark:valid {
+  background-color: rgba(0, 255, 136, 0.1);
+  border-color: #00ff88;
+}
+
+/* Feedback visual rojocuando está incorrecto */
+.input-dark:invalid {
+  background-color: rgba(255, 0, 0, 0.05);
+  border-color: #ff5555;
+}
+
+/* Input-group y símbolo */
+.symbol-dark {
+  background-color: #2b2b30;
+  color: #ffffff;
+  border: none;
+}
+
+/* Botones */
+.btn-outline-danger:hover {
+  background-color: #ff4b5c;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #00cc99;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #00ffaa;
+  color: #111;
+}
+
+/* Modales */
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-content.bg-success {
+  background: linear-gradient(160deg, #00cc88, #009966);
+}
+
+.modal-content.bg-dark {
+  background: linear-gradient(160deg, #1a1a1a, #2a2a2e);
+}
+
+/* Placeholders */
+::placeholder {
+  color: #828282 !important;
+}
+
+/* Solo números */
+.only-numbers::-webkit-outer-spin-button,
+.only-numbers::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.only-numbers[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.button-container-dark {
+  background-color: rgba(157, 151, 151, 0.2) !important;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* === Firma personal  === */
+.bg-navbar {
+  background-color: #1b1b1d;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer {
+  color: #999;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+footer:hover {
+  color: #fff;
+}
+
+/* === ANIMACIÓN DEL CORAZÓN === */
+.heart {
+  display: inline-block;
+  color: #ff4b5c;
+  animation: heartbeat 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Efecto de “latido” */
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+
+  25% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
